@@ -1,0 +1,593 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 25 11:15:26 2018
+# Process ID: 12923
+# Current directory: /home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.runs/design_1_posit_adder_es2_0_0_synth_1
+# Command line: vivado -log design_1_posit_adder_es2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_posit_adder_es2_0_0.tcl
+# Log file: /home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.runs/design_1_posit_adder_es2_0_0_synth_1/design_1_posit_adder_es2_0_0.vds
+# Journal file: /home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.runs/design_1_posit_adder_es2_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_posit_adder_es2_0_0.tcl -notrace
+Command: synth_design -top design_1_posit_adder_es2_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13112 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.730 ; gain = 82.918 ; free physical = 5159 ; free virtual = 12210
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_posit_adder_es2_0_0' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ip/design_1_posit_adder_es2_0_0/synth/design_1_posit_adder_es2_0_0.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'posit_adder_es2_v1_0' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'posit_adder_es2_v1_0_S00_AXI' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0_S00_AXI.v:372]
+INFO: [Synth 8-6157] synthesizing module 'positadd' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/positadd.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'posit_extract' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/posit_extract.sv:11]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:6]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:6]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'LOD_N' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:2]
+	Parameter N bound to: 32 - type: integer 
+	Parameter S bound to: 5 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'LOD' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+	Parameter N bound to: 32 - type: integer 
+	Parameter S bound to: 5 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized0' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+	Parameter N bound to: 16 - type: integer 
+	Parameter S bound to: 4 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized1' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+	Parameter N bound to: 8 - type: integer 
+	Parameter S bound to: 3 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized2' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+	Parameter N bound to: 4 - type: integer 
+	Parameter S bound to: 2 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized3' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+	Parameter N bound to: 2 - type: integer 
+	Parameter S bound to: 1 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized3' (1#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized2' (1#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized1' (1#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized0' (1#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:33]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:37]
+INFO: [Common 17-14] Message 'Synth 8-6104' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'LOD' (1#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'LOD_N' (2#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LOD_N.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'LZD_N' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:1]
+	Parameter N bound to: 32 - type: integer 
+	Parameter S bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LZD' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+	Parameter N bound to: 32 - type: integer 
+	Parameter S bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LZD__parameterized0' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+	Parameter N bound to: 16 - type: integer 
+	Parameter S bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LZD__parameterized1' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+	Parameter N bound to: 8 - type: integer 
+	Parameter S bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LZD__parameterized2' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+	Parameter N bound to: 4 - type: integer 
+	Parameter S bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LZD__parameterized3' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+	Parameter N bound to: 2 - type: integer 
+	Parameter S bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'LZD__parameterized3' (3#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'LZD__parameterized2' (3#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'LZD__parameterized1' (3#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'LZD__parameterized0' (3#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'LZD' (3#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'LZD_N' (4#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/LZD_N.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_left' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_left.v:2]
+	Parameter N bound to: 32 - type: integer 
+	Parameter S bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_left' (5#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_left.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'posit_extract' (6#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/posit_extract.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'shift_right' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_right.v:2]
+	Parameter N bound to: 62 - type: integer 
+	Parameter S bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_right' (7#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_right.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_left__parameterized0' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_left.v:2]
+	Parameter N bound to: 32 - type: integer 
+	Parameter S bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_left__parameterized0' (7#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_left.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_right__parameterized0' [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_right.v:2]
+	Parameter N bound to: 64 - type: integer 
+	Parameter S bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_right__parameterized0' (7#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/shift_right.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'positadd' (8#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/positadd.sv:10]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0_S00_AXI.v:225]
+INFO: [Synth 8-6155] done synthesizing module 'posit_adder_es2_v1_0_S00_AXI' (9#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'posit_adder_es2_v1_0' (10#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_posit_adder_es2_0_0' (11#1) [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ip/design_1_posit_adder_es2_0_0/synth/design_1_posit_adder_es2_0_0.sv:56]
+WARNING: [Synth 8-3331] design positadd has unconnected port clk
+WARNING: [Synth 8-3331] design posit_adder_es2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design posit_adder_es2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design posit_adder_es2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design posit_adder_es2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design posit_adder_es2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design posit_adder_es2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1340.355 ; gain = 127.543 ; free physical = 5139 ; free virtual = 12194
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1340.355 ; gain = 127.543 ; free physical = 5106 ; free virtual = 12168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1340.355 ; gain = 127.543 ; free physical = 5106 ; free virtual = 12168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1716.387 ; gain = 2.000 ; free physical = 4247 ; free virtual = 11354
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 4217 ; free virtual = 11324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 4217 ; free virtual = 11324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 4218 ; free virtual = 11326
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ipshared/fee2/src/positadd.sv:73]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 4201 ; free virtual = 11308
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 7     
+	   2 Input     62 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 27    
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 5     
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      3 Bit        Muxes := 20    
+	   2 Input      2 Bit        Muxes := 42    
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LOD__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module LOD__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module LOD__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module LOD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module LZD__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module LZD__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module LZD__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module LZD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module shift_left 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+Module posit_extract 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+Module shift_right 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     62 Bit        Muxes := 8     
+Module shift_left__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+Module shift_right__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 7     
+Module positadd 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module posit_adder_es2_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design positadd has unconnected port clk
+WARNING: [Synth 8-3331] design design_1_posit_adder_es2_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_posit_adder_es2_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_posit_adder_es2_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_posit_adder_es2_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_posit_adder_es2_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_posit_adder_es2_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_posit_adder_es2_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_posit_adder_es2_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_posit_adder_es2_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_posit_adder_es2_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_posit_adder_es2_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/posit_adder_es2_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_posit_adder_es2_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:11 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5029 ; free virtual = 12141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:19 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5471 ; free virtual = 12587
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:19 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5470 ; free virtual = 12586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:19 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5464 ; free virtual = 12580
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    64|
+|2     |LUT1   |   155|
+|3     |LUT2   |    41|
+|4     |LUT3   |   199|
+|5     |LUT4   |   110|
+|6     |LUT5   |   335|
+|7     |LUT6   |   749|
+|8     |MUXF7  |     1|
+|9     |FDRE   |   137|
+|10    |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-----------------------------+------+
+|      |Instance                              |Module                       |Cells |
++------+--------------------------------------+-----------------------------+------+
+|1     |top                                   |                             |  1792|
+|2     |  inst                                |posit_adder_es2_v1_0         |  1692|
+|3     |    posit_adder_es2_v1_0_S00_AXI_inst |posit_adder_es2_v1_0_S00_AXI |  1692|
+|4     |      positadd_inst                   |positadd                     |  1393|
++------+--------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5462 ; free virtual = 12578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1716.387 ; gain = 127.543 ; free physical = 5522 ; free virtual = 12638
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 1716.387 ; gain = 503.574 ; free physical = 5522 ; free virtual = 12638
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:21 . Memory (MB): peak = 1725.395 ; gain = 524.117 ; free physical = 5438 ; free virtual = 12554
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.runs/design_1_posit_adder_es2_0_0_synth_1/design_1_posit_adder_es2_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.srcs/sources_1/bd/design_1/ip/design_1_posit_adder_es2_0_0/design_1_posit_adder_es2_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/lledoux/Desktop/PhD/fpga/pynq/project_posit_from_scratch/posit_overlay/posit_overlay.runs/design_1_posit_adder_es2_0_0_synth_1/design_1_posit_adder_es2_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_posit_adder_es2_0_0_utilization_synth.rpt -pb design_1_posit_adder_es2_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1749.406 ; gain = 0.000 ; free physical = 5430 ; free virtual = 12548
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 25 11:16:59 2018...

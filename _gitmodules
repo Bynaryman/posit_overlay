@@ -1,0 +1,3 @@
+[submodule "posit_arith_hdl"]
+	path = posit_arith_hdl
+	url = https://github.com/lvandam/posit_arith_hdl.git

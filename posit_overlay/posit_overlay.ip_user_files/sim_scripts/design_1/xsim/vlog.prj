@@ -1,0 +1,22 @@
+verilog xil_defaultlib --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/fee2/hdl/posit_adder_es2_v1_0.v" \
+"../../../bd/design_1/ipshared/fee2/src/shift_left.v" \
+"../../../bd/design_1/ipshared/fee2/src/shift_right.v" \
+
+sv xil_defaultlib --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" \
+"../../../bd/design_1/ipshared/fee2/src/LOD_N.sv" \
+"../../../bd/design_1/ipshared/fee2/src/LZD_N.sv" \
+"../../../bd/design_1/ipshared/fee2/src/posit_defines.sv" \
+"../../../bd/design_1/ipshared/fee2/src/posit_extract.sv" \
+"../../../bd/design_1/ipshared/fee2/src/positadd.sv" \
+"../../../bd/design_1/ip/design_1_posit_adder_es2_0_0/sim/design_1_posit_adder_es2_0_0.sv" \
+
+verilog xil_defaultlib --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" --include "../../../../posit_overlay.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" \
+"../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
